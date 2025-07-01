@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using TMPro;
 public class CauldronManager : MonoBehaviour
 {
+    public PotionResultsScreen resultScreen;
     public List<PotionRecipes> recipes;
     public Image potionIcon;
     public TextMeshProUGUI potionName;
