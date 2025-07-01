@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-public class ItemDrag : MonoBehaviour
+public class ItemDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     private Canvas canvas;
     private RectTransform rectTransform;
@@ -15,13 +15,14 @@ public class ItemDrag : MonoBehaviour
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
+        Debug.Log("Dragging started: " + gameObject.name); // 👈 Add this line
         originalPosition = rectTransform.anchoredPosition;
         canvasGroup.alpha = 0.6f;
         canvasGroup.blocksRaycasts = false;
         transform.SetAsLastSibling();
     }
 
-    public void onContinueDrag(PointerEventData eventData)
+    public void OnDrag(PointerEventData eventData)
     {
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
