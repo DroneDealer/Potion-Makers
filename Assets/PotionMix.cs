@@ -5,7 +5,7 @@ public class PotionMix : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //committing an hour and a half of unity because i can't get my extensions to work!!
+        //Committing 2 horus of Unity because the extensions are not working
     }
 
     // Update is called once per frame
