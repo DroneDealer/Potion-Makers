@@ -13,4 +13,3 @@ public class DropZone : MonoBehaviour, IDropHandler
         }
     }
 }
-//Unity updates: created an ingredient log + menu for ingredients
