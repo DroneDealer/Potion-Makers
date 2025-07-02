@@ -6,6 +6,13 @@ public class IngredientClick : MonoBehaviour, IPointerClickHandler
     public IngredientInfoDisplay infoDisplay;
     public void OnPointerClick(PointerEventData eventData)
     {
-        infoDisplay.showInfo(ingredientInfo);
+        if (ingredientInfo != null && infoDisplay != null)
+        {
+            infoDisplay.showInfo(ingredientInfo);
+        }
+        else
+        {
+            Debug.LogWarning("CauldronManager reference missing!");
+        }
     }
 }

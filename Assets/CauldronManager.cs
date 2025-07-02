@@ -10,8 +10,11 @@ public class CauldronManager : MonoBehaviour
     public TextMeshProUGUI potionName;
     public TextMeshProUGUI potionDescription;
     private List<IngredientInfo> currentIngredients = new List<IngredientInfo>();
+
+    public GameObject cauldronObject;
     public void AddIngredient(IngredientInfo ingredient)
     {
+        Debug.Log("Trying to add ingredient");
         currentIngredients.Add(ingredient);
         if (currentIngredients.Count == 2)
         {
@@ -21,6 +24,11 @@ public class CauldronManager : MonoBehaviour
 
     void TryBrew()
     {
+        Debug.Log($"Trying to brew with {currentIngredients.Count} ingredients and {recipes.Count} recipes.");
+        if (cauldronObject != null)
+        {
+            cauldronObject.transform.SetAsFirstSibling(); // send to back of parent canvas
+        }
         foreach (var recipe in recipes)
         {
             if (Matches(recipe.ingredientA, recipe.ingredientB))
