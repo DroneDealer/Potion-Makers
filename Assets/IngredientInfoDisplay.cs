@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
 public class IngredientInfoDisplay : MonoBehaviour
 {
     public GameObject infoPanel;
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI descriptionText;
     public Image ingredientImage;
-
+    private IngredientInfo currentIngredient = null;
     private void Start()
     {
         infoPanel.SetActive(false);
@@ -15,6 +16,7 @@ public class IngredientInfoDisplay : MonoBehaviour
 
     public void showInfo(IngredientInfo data)
     {
+        currentIngredient = data;
         nameText.text = data.IngredientName;
         descriptionText.text = data.Ingredientdescription;
         ingredientImage.sprite = data.IngredientIcon;
@@ -25,5 +27,28 @@ public class IngredientInfoDisplay : MonoBehaviour
     public void hideInfo()
     {
         infoPanel.SetActive(false);
+        currentIngredient = null;
+    }
+
+    public void CloseInfoPanel()
+    {
+        Debug.Log("CloseInfoPanel called");
+        hideInfo();
+    }
+
+    public bool IsVisible()
+    {
+        return infoPanel.activeSelf;
+    }
+
+    public IngredientInfo GetCurrentIngredient()
+    {
+        return currentIngredient;
+    }
+
+    //test
+    public void TestButtonClick()
+    {
+        Debug.Log("Button clicked!");
     }
 }

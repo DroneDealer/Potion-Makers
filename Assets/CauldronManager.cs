@@ -12,6 +12,7 @@ public class CauldronManager : MonoBehaviour
     private List<IngredientInfo> currentIngredients = new List<IngredientInfo>();
 
     public GameObject cauldronObject;
+    public GameObject restartButton;
     public void AddIngredient(IngredientInfo ingredient)
     {
         Debug.Log("Trying to add ingredient");
@@ -60,5 +61,13 @@ public class CauldronManager : MonoBehaviour
         potionName.text = "Failed brew";
         potionDescription.text = "The potion fizzles... and does absolutely nothing. Good thing it didn't explode though.";
         Debug.Log("No matching recipe!");
+    }
+    public void RestartGame()
+    {
+        currentIngredients.Clear();
+        resultScreen.HidePanel();
+        restartButton.SetActive(false);
+        cauldronObject.SetActive(true);
+        Debug.Log("Game Restarted!");
     }
 }
