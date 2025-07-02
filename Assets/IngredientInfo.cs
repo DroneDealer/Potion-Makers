@@ -1,10 +1,11 @@
 using UnityEngine;
 
-[System.Serializable]
-public class IngredientInfo
+[CreateAssetMenu(fileName = "NewIngredient", menuName = "Potion/Ingredient")]
+public class IngredientInfo : ScriptableObject
 {
     public string IngredientName;
-    [TextArea] 
-    public string Ingredientdescription;
     public Sprite IngredientIcon;
+    [TextArea]
+    public string Ingredientdescription;
+
 }

@@ -23,26 +23,32 @@ public class CauldronManager : MonoBehaviour
     {
         foreach (var recipe in recipes)
         {
-            if (Matches(recipe.ingredientA, recipe.ingredientB) || Matches(recipe.ingredientA, recipe.ingredientB))
+            if (Matches(recipe.ingredientA, recipe.ingredientB))
             {
                 ShowResult(recipe);
                 currentIngredients.Clear();
                 return;
             }
+            ShowFailedBrew();
+            currentIngredients.Clear();
         }
     }
 
     bool Matches(IngredientInfo a, IngredientInfo b)
     {
-        return currentIngredients[0] == a && currentIngredients[1] == b;
+        return (currentIngredients[0] == a && currentIngredients[1] == b) || (currentIngredients[0] == b && currentIngredients[1] == a);
     }
 
     void ShowResult(PotionRecipes recipes)
     {
-        potionIcon.sprite = recipes.potionIcon;
-        potionName.text = recipes.potionName;
-        potionDescription.text = recipes.potionDescription;
-
+        resultScreen.ShowPotionResult(recipes.potionName, recipes.potionDescription, recipes.potionIcon);
         Debug.Log("Brewed: " + recipes.potionName);
+    }
+    void ShowFailedBrew()
+    {
+        potionIcon.sprite = null;
+        potionName.text = "Failed brew";
+        potionDescription.text = "The potion fizzles... and does absolutely nothing. Good thing it didn't explode though.";
+        Debug.Log("No matching recipe!");
     }
 }
