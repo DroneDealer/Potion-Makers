@@ -29,13 +29,15 @@ public class CauldronManager : MonoBehaviour
                 currentIngredients.Clear();
                 return;
             }
-            ShowFailedBrew();
-            currentIngredients.Clear();
         }
+        ShowFailedBrew();
+        currentIngredients.Clear();
+        return;
     }
 
     bool Matches(IngredientInfo a, IngredientInfo b)
     {
+        Debug.Log($"Comparing: {currentIngredients[0].IngredientName} + {currentIngredients[1].IngredientName}  with  {a.IngredientName} + {b.IngredientName}");
         return (currentIngredients[0] == a && currentIngredients[1] == b) || (currentIngredients[0] == b && currentIngredients[1] == a);
     }
 
