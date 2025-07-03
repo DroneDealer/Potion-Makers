@@ -44,7 +44,7 @@ public class IngredientInfoDisplay : MonoBehaviour
         return currentIngredient;
     }
 
-    //test
+    //test (button does not recieve input)
     public void TestButtonClick()
     {
         Debug.Log("Button clicked!");

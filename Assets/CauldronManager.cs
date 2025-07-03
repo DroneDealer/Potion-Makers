@@ -13,6 +13,8 @@ public class CauldronManager : MonoBehaviour
 
     public GameObject cauldronObject;
     public GameObject restartButton;
+    public IngredientInfoDisplay infoDisplay;
+
     public void AddIngredient(IngredientInfo ingredient)
     {
         Debug.Log("Trying to add ingredient");
@@ -55,6 +57,10 @@ public class CauldronManager : MonoBehaviour
         resultScreen.ShowPotionResult(recipes.potionName, recipes.potionDescription, recipes.potionIcon);
         restartButton.SetActive(true);
         Debug.Log("Brewed: " + recipes.potionName);
+        if (infoDisplay != null && infoDisplay.IsVisible())
+        {
+            infoDisplay.hideInfo();
+        }
     }
     void ShowFailedBrew()
     {
