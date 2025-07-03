@@ -69,6 +69,7 @@ public class CauldronManager : MonoBehaviour
         resultScreen.HidePanel();
         restartButton.SetActive(false);
         cauldronObject.SetActive(true);
+        //foreach (Transform child in incgre)
         Debug.Log("Game Restarted!");
     }
 }

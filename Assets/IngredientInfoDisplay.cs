@@ -32,7 +32,6 @@ public class IngredientInfoDisplay : MonoBehaviour
 
     public void CloseInfoPanel()
     {
-        Debug.Log("CloseInfoPanel called");
         hideInfo();
     }
 
