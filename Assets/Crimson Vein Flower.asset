@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87c7a9e3ce6941d428a998f136d8ac3b, type: 3}
   m_Name: Crimson Vein Flower
   m_EditorClassIdentifier: 
-  IngredientName: 
-  Ingredientdescription: 
-  IngredientIcon: {fileID: 0}
+  IngredientName: Crimson Vein Flower
+  IngredientIcon: {fileID: 2362167693445892924, guid: af98000365e33ee49be2f6cfe1c8b354, type: 3}
+  Ingredientdescription: "A sentient, unsettling plant organ with red vein-like filaments
+    running through its fleshy petals, resembling bloodshot eyes. It doesn't just
+    see \u2014 it perceives. Its presence induces hallucinations, altered awareness,
+    and distorted truths. Alchemists debate whether it\u2019s a plant, parasite,
+    or something in between. Often used in potions that deal with vision, illusion,
+    or unraveling the psyche."

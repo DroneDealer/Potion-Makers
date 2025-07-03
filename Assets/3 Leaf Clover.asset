@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87c7a9e3ce6941d428a998f136d8ac3b, type: 3}
   m_Name: 3 Leaf Clover
   m_EditorClassIdentifier: 
-  IngredientName: 
-  Ingredientdescription: 
-  IngredientIcon: {fileID: 0}
+  IngredientName: 3 Leaf Clover
+  IngredientIcon: {fileID: 2129180607880736153, guid: 49d6475c3809f814dbfae9048798614d, type: 3}
+  Ingredientdescription: "Often overshadowed by its famed four-leaf cousin, the humble
+    three-leaf clover carries its own subtle luck. Humans\u2019 obsession with rarity
+    blinds them to the quiet power of the ordinary\u2014a reminder that sometimes,
+    simplicity holds the greatest magic.  "

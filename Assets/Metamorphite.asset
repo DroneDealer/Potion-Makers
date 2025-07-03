@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87c7a9e3ce6941d428a998f136d8ac3b, type: 3}
   m_Name: Metamorphite
   m_EditorClassIdentifier: 
-  IngredientName: 
-  Ingredientdescription: 
-  IngredientIcon: {fileID: 0}
+  IngredientName: Metamorphite
+  IngredientIcon: {fileID: -6251682230944352461, guid: 16ed327cab5977542aa85ad37065b6da, type: 3}
+  Ingredientdescription: This rare crystal is thought to have originated from a rogue
+    asteroid that crashed to Earth under unknown influence. Strangely alive, it begins
+    to transform exactly 13 hours after human contact, enclosing itself in a rough
+    cocoon and reemerging one lunar cycle later as a radiant azure gem. Sought by
+    potioneers for its powerful change-inducing properties, its unpredictable nature
+    makes it both precious and dangerous.

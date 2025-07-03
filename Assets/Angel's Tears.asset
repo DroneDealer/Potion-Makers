@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87c7a9e3ce6941d428a998f136d8ac3b, type: 3}
   m_Name: Angel's Tears
   m_EditorClassIdentifier: 
-  IngredientName: 
-  Ingredientdescription: 
-  IngredientIcon: {fileID: 0}
+  IngredientName: Angel's Tear
+  IngredientIcon: {fileID: -7275846927249200716, guid: af98000365e33ee49be2f6cfe1c8b354, type: 3}
+  Ingredientdescription: "An impossibly delicate and luminous plant known for its
+    ability to produce water and nourish nearby flora. Despite its beauty, Angel\u2019s
+    Tears has no sense of self-preservation and will willingly drain its own life
+    essence to sustain others. The water it produces holds potent healing properties,
+    making the plant a prized\u2014though heartbreakingly selfless\u2014ingredient
+    among alchemists."

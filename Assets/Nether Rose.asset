@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87c7a9e3ce6941d428a998f136d8ac3b, type: 3}
   m_Name: Nether Rose
   m_EditorClassIdentifier: 
-  IngredientName: 
-  Ingredientdescription: 
-  IngredientIcon: {fileID: 0}
+  IngredientName: Nether Rose
+  IngredientIcon: {fileID: -5351662351787188615, guid: af98000365e33ee49be2f6cfe1c8b354, type: 3}
+  Ingredientdescription: "Also known as Hell\u2019s Olive Branch, this rare blossom
+    grows only in the scorched, volcanic depths of the earth where nothing else dares
+    to bloom. Despite its hellish origin, the Nether Rose radiates a gentle, enduring
+    warmth \u2014 a symbol of unlikely refuge. It is prized for its restorative heat,
+    often used to ward off frostbite, comfort the dying, or anchor souls drifting
+    toward the void. Alchemists regard it as a paradox: born of fire, yet full of
+    compassion."

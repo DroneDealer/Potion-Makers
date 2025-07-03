@@ -9,7 +9,7 @@ public class IngredientInfoDisplay : MonoBehaviour
     public TextMeshProUGUI descriptionText;
     public Image ingredientImage;
     private IngredientInfo currentIngredient = null;
-    private void Start()
+   private void Start()
     {
         infoPanel.SetActive(false);
     }
@@ -40,7 +40,6 @@ public class IngredientInfoDisplay : MonoBehaviour
     {
         return infoPanel.activeSelf;
     }
-
     public IngredientInfo GetCurrentIngredient()
     {
         return currentIngredient;

@@ -53,6 +53,7 @@ public class CauldronManager : MonoBehaviour
     void ShowResult(PotionRecipes recipes)
     {
         resultScreen.ShowPotionResult(recipes.potionName, recipes.potionDescription, recipes.potionIcon);
+        restartButton.SetActive(true);
         Debug.Log("Brewed: " + recipes.potionName);
     }
     void ShowFailedBrew()
