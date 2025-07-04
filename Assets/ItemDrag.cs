@@ -17,7 +17,7 @@ public class ItemDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("Dragging started: " + gameObject.name); // 👈 Add this line
+        Debug.Log("Dragging started: " + gameObject.name);
         originalPosition = rectTransform.anchoredPosition;
         canvasGroup.alpha = 0.6f;
         canvasGroup.blocksRaycasts = false;

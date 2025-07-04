@@ -30,11 +30,6 @@ public class IngredientInfoDisplay : MonoBehaviour
         currentIngredient = null;
     }
 
-    public void CloseInfoPanel()
-    {
-        hideInfo();
-    }
-
     public bool IsVisible()
     {
         return infoPanel.activeSelf;
@@ -42,11 +37,5 @@ public class IngredientInfoDisplay : MonoBehaviour
     public IngredientInfo GetCurrentIngredient()
     {
         return currentIngredient;
-    }
-
-    //test (button does not recieve input)
-    public void TestButtonClick()
-    {
-        Debug.Log("Button clicked!");
     }
 }

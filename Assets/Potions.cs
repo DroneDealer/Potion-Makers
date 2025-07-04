@@ -9,4 +9,3 @@ public class Potions
     public Sprite icon;
     public List<string> requiredIngredients;
 }
-//Added descriptions for each potion + coded their compositions
