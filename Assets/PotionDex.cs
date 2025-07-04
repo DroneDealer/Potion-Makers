@@ -7,6 +7,7 @@ public class PotionDex : MonoBehaviour
     private HashSet<PotionRecipes> discoveredPotions = new HashSet<PotionRecipes>();
     private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         if (Instance == null)
         {
             Instance = this;
@@ -18,6 +19,7 @@ public class PotionDex : MonoBehaviour
     }
     public void RegisterPotion(PotionRecipes newPotion)
     {
+        Debug.Log("Registering: " + newPotion.potionName + " | Total: " + discoveredPotions.Count);
         if (!discoveredPotions.Contains(newPotion))
         {
             discoveredPotions.Add(newPotion);

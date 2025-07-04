@@ -28,10 +28,7 @@ public class CauldronManager : MonoBehaviour
     void TryBrew()
     {
         Debug.Log($"Trying to brew with {currentIngredients.Count} ingredients and {recipes.Count} recipes.");
-        if (cauldronObject != null)
-        {
-            cauldronObject.transform.SetAsFirstSibling(); // send to back of parent canvas
-        }
+
         foreach (var recipe in recipes)
         {
             if (Matches(recipe.ingredientA, recipe.ingredientB))
@@ -70,4 +67,4 @@ public class CauldronManager : MonoBehaviour
        cauldronObject.SetActive(true);
         Debug.Log("Game Restarted!");
     }
-}
+} 

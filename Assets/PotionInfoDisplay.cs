@@ -4,6 +4,8 @@ using TMPro;
 public class PotionInfoDisplay : MonoBehaviour
 {
     public GameObject potionBookPanel;
+
+    public GameObject wholeBookPanel;
     public TextMeshProUGUI potionNameText;
     public TextMeshProUGUI potionDescriptionText;
     public Image potionIconImage;
@@ -38,7 +40,7 @@ public class PotionInfoDisplay : MonoBehaviour
 
     public void ToggleInfo()
     {
-        potionBookPanel.SetActive(!potionBookPanel.activeSelf);
+        wholeBookPanel.SetActive(!wholeBookPanel.activeSelf);
     }
 
     public bool IsVisible()
