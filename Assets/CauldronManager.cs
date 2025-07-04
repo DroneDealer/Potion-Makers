@@ -56,6 +56,7 @@ public class CauldronManager : MonoBehaviour
         resultScreen.ShowPotionResult(recipes.potionName, recipes.potionDescription, recipes.potionIcon);
         restartButton.SetActive(true);
         Debug.Log("Brewed: " + recipes.potionName);
+        PotionDex.Instance.RegisterPotion(recipes);
         if (infoDisplay != null && infoDisplay.IsVisible())
         {
             infoDisplay.hideInfo();
