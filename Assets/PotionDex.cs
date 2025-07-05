@@ -4,6 +4,7 @@ using UnityEngine;
 public class PotionDex : MonoBehaviour
 {
     public static PotionDex Instance;
+    public PotionDatabase potionDatabase; 
     private HashSet<PotionRecipes> discoveredPotions = new HashSet<PotionRecipes>();
     private void Awake()
     {
@@ -44,6 +45,14 @@ public class PotionDex : MonoBehaviour
     }
     public IEnumerable<PotionRecipes> GetDiscoveredPotions()
     {
+        List<PotionRecipes> orderedDiscovered = new List<PotionRecipes>();
+        foreach (var potion in potionDatabase.recipes)
+        {
+            if (discoveredPotions.Contains(potion))
+            {
+                orderedDiscovered.Add(potion);
+            }
+        } 
         return discoveredPotions;
     }
 

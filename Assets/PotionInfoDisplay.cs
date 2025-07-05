@@ -17,10 +17,10 @@ public class PotionInfoDisplay : MonoBehaviour
             potionBookPanel.SetActive(false);
         }
     }
-    public void ShowInfo(PotionRecipes potion)
+    public void ShowInfo(PotionRecipes potion, int index)
     {
         currentPotion = potion;
-        potionNameText.text = potion.potionName;
+        potionNameText.text = $"#{index + 1}: " + potion.potionName;
         potionDescriptionText.text = potion.potionDescription;
         potionIconImage.sprite = potion.potionIcon;
         if (potionBookPanel != null)

@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 
-public class PotionBookUI : MonoBehaviour
+public class PotionDexUI : MonoBehaviour
 {
     [Header("Buttons")]
     public Button prevButton;
@@ -18,7 +18,7 @@ public class PotionBookUI : MonoBehaviour
     private AudioSource audioSource;
 
 
- private List<PotionRecipes> discoveredPotions = new List<PotionRecipes>();
+    private List<PotionRecipes> discoveredPotions = new List<PotionRecipes>();
     private int currentPage = 0;
     private void OnEnable()
     {
@@ -62,6 +62,14 @@ public class PotionBookUI : MonoBehaviour
             return;
         }
         PotionRecipes currentPotion = discoveredPotions[currentPage];
-        potionInfoDisplay.ShowInfo(currentPotion);
+        potionInfoDisplay.ShowInfo(currentPotion, currentPage);
+    }
+
+    public void RefreshBook()
+    {
+        Debug.Log("Refreshing Potion Dex");
+        discoveredPotions = new List<PotionRecipes>(PotionDex.Instance.GetDiscoveredPotions());
+        currentPage = Mathf.Clamp(currentPage, 0, discoveredPotions.Count - 1);
+        UpdatePage();
     }
 }
