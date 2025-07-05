@@ -146,3 +146,63 @@ MonoBehaviour:
       it wreaks upon one\u2019s vision. Long after the potion\u2019s effects should
       have faded, shadows at the edges of reality glow with broken dreams and forgotten
       worlds."
+  - ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
+    ingredientB: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
+    potionName: Hel''s Respite
+    potionIcon: {fileID: 0}
+    potionDescription: "Plucked from the flame-kissed thorns of the nether wilds,
+      two blooms entwine to brew a balm for the battleworn. This potion carries the
+      paradox of its origin \u2014 a moment of peace born from a world of fire. When
+      all hope burns away, it grants a breath of calm, a sanctuary in a bottle.\n\n"
+  - ingredientA: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
+    ingredientB: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
+    potionName: Angel's Blessings
+    potionIcon: {fileID: 0}
+    potionDescription: "Forged from twin tears of the protectors of all, the Angel\u2019s
+      Blessing binds the drinker to a solemn vow: to mend broken bodies with threads
+      of their own being. Every touch heals, yet every cure comes at a painful cost
+      to the drinker, as life given is life spent."
+  - ingredientA: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
+    ingredientB: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
+    potionName: Rotborne Elixir
+    potionIcon: {fileID: 0}
+    potionDescription: "Brewed from two Blightcap mushrooms steeped in radioactive
+      decay, this potion thrums with unnatural energy. It does not mend \u2014 it
+      mutates. Those who drink it feel strength bloom from sickness, vigor from rot.
+      A toxic salvation for those who dare to evolve through corruption - for those
+      who are willing to watch their body rot around them for more power. DO NOT
+      CONSUME: IRREPARABLY WARPS BRAIN CHEMISTRY.\r"
+  - ingredientA: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
+    ingredientB: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
+    potionName: Essence of Luck
+    potionIcon: {fileID: 0}
+    potionDescription: "modified it: Brewed from a pair of perfectly average three-leaf
+      clovers, this potion is nature\u2019s little prank \u2014 for all the commonness
+      of its ingredients, it\u2019s filled to the brim with luck. The universe looks
+      favorably upon the drinker: everything goes their way, from lost things turning
+      up exactly when needed to danger stumbling over its own feet. It\u2019s said
+      the clovers giggle in the brew, delighted to be mistaken for plain and excited
+      to surprise the drinker with their wealth of untapped potential.\r"
+  - ingredientA: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
+    ingredientB: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
+    potionName: Stellar Flux Elixir
+    potionIcon: {fileID: 0}
+    potionDescription: "Born from twin shards of cosmic stone, the Metamorphite potion
+      pulses with a quiet life of its own. Forged from rocks that fell from wandering
+      skies, it carries the ancient power to shift and reshape, echoing the restless
+      dance of the stars. Yet beware\u2014the two living stones within vie for dominance,
+      each craving the other\u2019s space to expand. Those who drink this brew may
+      find their forms mutable, but risk losing parts of themselves to the insatiable
+      hunger of the metamorphing essence, as if their very being is slowly absorbed
+      and rewritten."
+  - ingredientA: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
+    ingredientB: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
+    potionName: Psychis's Prison
+    potionIcon: {fileID: 0}
+    potionDescription: "Brewed from a pair of Crimson Vein Flowers, this potent elixir
+      opens the drinker\u2019s mind to glimpses beyond the veil\u2014visions of futures
+      seen and unseen, truths both dazzling and disturbing. But such power demands
+      a price: the flood of endless foresight dulls the taste of life itself, trapping
+      the soul in a ceaseless haze where every moment feels both known and hollow.
+      To sip is to wander a labyrinth of illusions, where reality frays and the mind
+      teeters on the edge of madness."

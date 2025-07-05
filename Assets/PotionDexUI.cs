@@ -22,6 +22,7 @@ public class PotionBookUI : MonoBehaviour
     private int currentPage = 0;
     private void OnEnable()
     {
+        Debug.Log("PotionDexUI OnEnable");
         wholeBookPanel.SetActive(true);
         discoveredPotions = new List<PotionRecipes>(PotionDex.Instance.GetDiscoveredPotions());
         currentPage = 0;

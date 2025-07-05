@@ -7,6 +7,7 @@ public class PotionDex : MonoBehaviour
     private HashSet<PotionRecipes> discoveredPotions = new HashSet<PotionRecipes>();
     private void Awake()
     {
+        Debug.Log("Potion Awake called!");
         DontDestroyOnLoad(gameObject);
         if (Instance == null)
         {
@@ -17,6 +18,16 @@ public class PotionDex : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+    //Debugging
+    public void OnEnable()
+    {
+        if (PotionDex.Instance == null)
+        {
+            Debug.Log("No Instance Called!");
+        }
+    }
+    //Debugging
     public void RegisterPotion(PotionRecipes newPotion)
     {
         Debug.Log("Registering: " + newPotion.potionName + " | Total: " + discoveredPotions.Count);
