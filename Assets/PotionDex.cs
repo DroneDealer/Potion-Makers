@@ -4,8 +4,8 @@ using UnityEngine;
 public class PotionDex : MonoBehaviour
 {
     public static PotionDex Instance;
-    public PotionDatabase potionDatabase; 
-    private HashSet<PotionRecipes> discoveredPotions = new HashSet<PotionRecipes>();
+    public PotionDatabase potionDatabase;
+    private List<PotionRecipes> discoveredPotions = new List<PotionRecipes>();
     private void Awake()
     {
         Debug.Log("Potion Awake called!");
@@ -19,24 +19,16 @@ public class PotionDex : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
-    //Debugging
-    public void OnEnable()
-    {
-        if (PotionDex.Instance == null)
-        {
-            Debug.Log("No Instance Called!");
-        }
-    }
-    //Debugging
+
     public void RegisterPotion(PotionRecipes newPotion)
     {
-        Debug.Log("Registering: " + newPotion.potionName + " | Total: " + discoveredPotions.Count);
+        //Debug.Log("Registering: " + newPotion.potionName + " | Total: " + discoveredPotions.Count);
+        Debug.Log($"[REGISTER] Adding potion: {newPotion.potionName} to instance ID: {GetInstanceID()}");
         if (!discoveredPotions.Contains(newPotion))
         {
             discoveredPotions.Add(newPotion);
             //add an exclamation: "NEW!" in the UI panel when a new potion is discovered
-            Debug.Log("New potion discovered: " + newPotion.potionName);
+            Debug.Log("New potion discovered: " + newPotion.potionName + ". Total now: " + discoveredPotions.Count);
         }
     }
     public bool IsPotionDiscovered(PotionRecipes potion)
@@ -45,15 +37,6 @@ public class PotionDex : MonoBehaviour
     }
     public IEnumerable<PotionRecipes> GetDiscoveredPotions()
     {
-        List<PotionRecipes> orderedDiscovered = new List<PotionRecipes>();
-        foreach (var potion in potionDatabase.recipes)
-        {
-            if (discoveredPotions.Contains(potion))
-            {
-                orderedDiscovered.Add(potion);
-            }
-        } 
         return discoveredPotions;
     }
-
 }

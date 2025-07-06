@@ -1268,8 +1268,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -346, y: 287}
-  m_SizeDelta: {x: 551.95, y: 137.98}
+  m_AnchoredPosition: {x: -383.85, y: 287}
+  m_SizeDelta: {x: 627.65, y: 137.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &286424464
 MonoBehaviour:
@@ -2385,7 +2385,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potionBookPanel: {fileID: 603191378}
-  wholeBookPanel: {fileID: 1239440462}
   potionNameText: {fileID: 286424464}
   potionDescriptionText: {fileID: 964001426}
   potionIconImage: {fileID: 828408082}
@@ -3465,118 +3464,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resultScreen: {fileID: 913253852}
-  recipes:
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
-  - ingredientA: {fileID: 0}
-    ingredientB: {fileID: 0}
-    potionName: 
-    potionIcon: {fileID: 0}
-    potionDescription: 
+  potionDatabase: {fileID: 11400000, guid: faed270e83ef7c34395803f3cfe1e668, type: 2}
   potionIcon: {fileID: 83377442}
   potionName: {fileID: 560836531}
   potionDescription: {fileID: 1930826859}
   cauldronObject: {fileID: 1973440222}
   restartButton: {fileID: 671402111}
   infoDisplay: {fileID: 1815729564}
+  potionDexUI: {fileID: 1239440466}
 --- !u!4 &1256630894
 Transform:
   m_ObjectHideFlags: 0
@@ -4045,6 +3940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfe53c0152e22da40a4c9c51cfba0dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  potionDatabase: {fileID: 11400000, guid: faed270e83ef7c34395803f3cfe1e668, type: 2}
 --- !u!4 &1593523726
 Transform:
   m_ObjectHideFlags: 0
@@ -4666,9 +4562,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 603191382}
-        m_TargetAssemblyTypeName: PotionInfoDisplay, Assembly-CSharp
-        m_MethodName: ToggleInfo
+      - m_Target: {fileID: 1239440466}
+        m_TargetAssemblyTypeName: PotionDexUI, Assembly-CSharp
+        m_MethodName: TogglePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

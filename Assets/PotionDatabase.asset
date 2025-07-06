@@ -13,21 +13,24 @@ MonoBehaviour:
   m_Name: PotionDatabase
   m_EditorClassIdentifier: 
   recipes:
-  - ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
+  - potionNumber: 1
+    ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     ingredientB: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     potionName: Flameheart Elixir
     potionIcon: {fileID: 0}
     potionDescription: "Born from the union of humanity\u2019s invention and nature\u2019s
       vitality, this potion fortifies the body against all manner of impurities\u2014resisting
       poisons, paralysis, and even flame itself. "
-  - ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
+  - potionNumber: 2
+    ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     ingredientB: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     potionName: Ashling's Kiss
     potionIcon: {fileID: 0}
     potionDescription: "Born from the life-giving Angel\u2019s Tear and the otherworldly
       warmth of the Nether Sapling, this unique potion soothes frostbite and eases
       the passage of both the dying and the restless undead."
-  - ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
+  - potionNumber: 3
+    ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     ingredientB: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     potionName: Bottled Starlight
     potionIcon: {fileID: 0}
@@ -35,14 +38,16 @@ MonoBehaviour:
       the astrally aligned Metamorphite results in a fascinating cloaking potion
       that allows the drinker to manipulate light. They can render themselves invisible
       or strike with the power of a thousand suns! Incredibly versatile.
-  - ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
+  - potionNumber: 4
+    ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     ingredientB: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     potionName: Emberluck Draught
     potionIcon: {fileID: 0}
     potionDescription: "Infused with the Nether rose\u2019s stubborn warmth and the
       clover\u2019s luck, this draught grants a quiet but persistent good fortune\u2014like
       a small refuge of hope in the worst storms."
-  - ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
+  - potionNumber: 5
+    ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     ingredientB: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
     potionName: False Awakening
     potionIcon: {fileID: 0}
@@ -52,7 +57,8 @@ MonoBehaviour:
       are not mere lies but reflections of the best possible version of themselves\u2014though
       in truth, few desperate enough to summon such hope ever fully realize that
       ideal."
-  - ingredientA: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
+  - potionNumber: 6
+    ingredientA: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     ingredientB: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     potionName: Bane of Luck
     potionIcon: {fileID: 0}
@@ -61,7 +67,8 @@ MonoBehaviour:
       of bringing luck and joy, the potion tips the scales away from your favor.
       Must be injected into the bloodsteam (preferably the head) to take effect on
       the victim.
-  - ingredientA: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
+  - potionNumber: 7
+    ingredientA: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     ingredientB: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     potionName: Memory Fog
     potionIcon: {fileID: 0}
@@ -70,7 +77,8 @@ MonoBehaviour:
       It dulls painful memories and numbs grief, offering relief from trauma\u2014but
       at the cost of slipping moments and forgotten details. Use with caution, for
       forgetting may come easier than intended."
-  - ingredientA: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
+  - potionNumber: 8
+    ingredientA: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     ingredientB: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     potionName: Riftshocker
     potionIcon: {fileID: 0}
@@ -80,7 +88,8 @@ MonoBehaviour:
       in time, be caught in a space - time loop, or may simply explode due to an
       imbalance in cosmic forces. NEVER CREATE INTENTIONALLY WITHOUT A SENIOR SPACETIME
       TRAVELLER PRESENT AND PREPARED.'
-  - ingredientA: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
+  - potionNumber: 9
+    ingredientA: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     ingredientB: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     potionName: Hollowed Charm
     potionIcon: {fileID: 0}
@@ -88,7 +97,8 @@ MonoBehaviour:
       this potion produces an aura of trust that deceives rather than heals. Often
       used by politicians and silver-tongued opportunists, it draws people in\u2014regardless
       of whether that trust is deserved."
-  - ingredientA: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
+  - potionNumber: 10
+    ingredientA: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     ingredientB: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
     potionName: Toxic Bloom
     potionIcon: {fileID: 0}
@@ -96,7 +106,8 @@ MonoBehaviour:
       and spread. The nature of these hallucinations appears to be shaped by the
       victim\u2019s inner conflicts as well as glimpses of their future \u2014 quite
       a fascinating property. Useful for defense and weakening foes."
-  - ingredientA: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
+  - potionNumber: 11
+    ingredientA: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     ingredientB: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     potionName: Fickle Fortuna
     potionIcon: {fileID: 0}
@@ -108,7 +119,8 @@ MonoBehaviour:
       known test subject\u2019s bones destabilized and their head was replaced with
       what witnesses insist was a giant cracker. It is still debated to this day
       whether or not the cracker was rye- or water- based."
-  - ingredientA: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
+  - potionNumber: 12
+    ingredientA: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     ingredientB: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
     potionName: Seed of Truth
     potionIcon: {fileID: 0}
@@ -117,14 +129,16 @@ MonoBehaviour:
       are\u2014not in dreams, but in total clarity. Strengths you ignored. Flaws
       you excused. Some are inspired. Others run. The potion never lies\u2026 but
       it never softens, either."
-  - ingredientA: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
+  - potionNumber: 13
+    ingredientA: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     ingredientB: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     potionName: Angel's Star
     potionIcon: {fileID: 0}
     potionDescription: "Forged from healing sacrifice and celestial change, this
       potion grants the power to transfigure into another form\u2014held flawlessly
       for one day and one night, then undone as if it were never real."
-  - ingredientA: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
+  - potionNumber: 14
+    ingredientA: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     ingredientB: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
     potionName: Vigil's Mercy
     potionIcon: {fileID: 0}
@@ -133,7 +147,8 @@ MonoBehaviour:
       it strikes. The drinker gains a moment of divine foresight\u2014enough to dodge
       a blade, move before the fall, or stop a cruel word before it's spoken. Rarely
       brewed. Often wasted on those who do not listen."
-  - ingredientA: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
+  - potionNumber: 15
+    ingredientA: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     ingredientB: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
     potionName: Veilrend Elixir
     potionIcon: {fileID: 0}
@@ -146,7 +161,8 @@ MonoBehaviour:
       it wreaks upon one\u2019s vision. Long after the potion\u2019s effects should
       have faded, shadows at the edges of reality glow with broken dreams and forgotten
       worlds."
-  - ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
+  - potionNumber: 16
+    ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     ingredientB: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     potionName: Hel''s Respite
     potionIcon: {fileID: 0}
@@ -154,7 +170,8 @@ MonoBehaviour:
       two blooms entwine to brew a balm for the battleworn. This potion carries the
       paradox of its origin \u2014 a moment of peace born from a world of fire. When
       all hope burns away, it grants a breath of calm, a sanctuary in a bottle.\n\n"
-  - ingredientA: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
+  - potionNumber: 17
+    ingredientA: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     ingredientB: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     potionName: Angel's Blessings
     potionIcon: {fileID: 0}
@@ -162,7 +179,8 @@ MonoBehaviour:
       Blessing binds the drinker to a solemn vow: to mend broken bodies with threads
       of their own being. Every touch heals, yet every cure comes at a painful cost
       to the drinker, as life given is life spent."
-  - ingredientA: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
+  - potionNumber: 18
+    ingredientA: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     ingredientB: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     potionName: Rotborne Elixir
     potionIcon: {fileID: 0}
@@ -172,18 +190,20 @@ MonoBehaviour:
       A toxic salvation for those who dare to evolve through corruption - for those
       who are willing to watch their body rot around them for more power. DO NOT
       CONSUME: IRREPARABLY WARPS BRAIN CHEMISTRY.\r"
-  - ingredientA: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
+  - potionNumber: 19
+    ingredientA: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     ingredientB: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     potionName: Essence of Luck
     potionIcon: {fileID: 0}
-    potionDescription: "modified it: Brewed from a pair of perfectly average three-leaf
-      clovers, this potion is nature\u2019s little prank \u2014 for all the commonness
-      of its ingredients, it\u2019s filled to the brim with luck. The universe looks
+    potionDescription: "Brewed from a pair of perfectly average three-leaf clovers,
+      this potion is nature\u2019s little prank \u2014 for all the commonness of
+      its ingredients, it\u2019s filled to the brim with luck. The universe looks
       favorably upon the drinker: everything goes their way, from lost things turning
       up exactly when needed to danger stumbling over its own feet. It\u2019s said
-      the clovers giggle in the brew, delighted to be mistaken for plain and excited
+      the clovers giggle in the brew, delighted to be mistaken for ordinary and excited
       to surprise the drinker with their wealth of untapped potential.\r"
-  - ingredientA: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
+  - potionNumber: 20
+    ingredientA: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     ingredientB: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     potionName: Stellar Flux Elixir
     potionIcon: {fileID: 0}
@@ -195,7 +215,8 @@ MonoBehaviour:
       find their forms mutable, but risk losing parts of themselves to the insatiable
       hunger of the metamorphing essence, as if their very being is slowly absorbed
       and rewritten."
-  - ingredientA: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
+  - potionNumber: 21
+    ingredientA: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
     ingredientB: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
     potionName: Psychis's Prison
     potionIcon: {fileID: 0}

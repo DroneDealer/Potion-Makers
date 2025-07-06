@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
+using System;
 
 public class PotionDexUI : MonoBehaviour
 {
@@ -20,38 +21,58 @@ public class PotionDexUI : MonoBehaviour
 
     private List<PotionRecipes> discoveredPotions = new List<PotionRecipes>();
     private int currentPage = 0;
-    private void OnEnable()
-    {
-        Debug.Log("PotionDexUI OnEnable");
-        wholeBookPanel.SetActive(true);
-        discoveredPotions = new List<PotionRecipes>(PotionDex.Instance.GetDiscoveredPotions());
-        currentPage = 0;
-        UpdatePage();
-    }
     private void Start()
     {
         wholeBookPanel.SetActive(false);
+        nextButton.onClick.RemoveAllListeners();
+        prevButton.onClick.RemoveAllListeners();
         nextButton.onClick.AddListener(flipNext);
         prevButton.onClick.AddListener(flipPrev);
         audioSource = GetComponent<AudioSource>();
     }
-
+        public void LoadPotions()
+        {
+            if (PotionDex.Instance == null)
+            {
+                Debug.LogWarning("[PotionDexUI] PotionDex.Instance is null!");
+                discoveredPotions.Clear();
+                return;
+            }
+            discoveredPotions = new List<PotionRecipes>(PotionDex.Instance.GetDiscoveredPotions());
+            currentPage = 0;
+            Debug.Log($"[PotionDexUI] Loaded {discoveredPotions.Count} potions");
+            for (int i = 0; i < discoveredPotions.Count; i++)
+            {
+                Debug.Log($"  Potion {i}: {discoveredPotions[i].potionName}");
+            }
+        }
     public void flipNext()
     {
-        if (currentPage < discoveredPotions.Count - 1)
+        Debug.Log($"FlipNext called — currentPage BEFORE decrement: {currentPage}");
+        if (currentPage > 0)
         {
             currentPage++;
             UpdatePage();
             audioSource.PlayOneShot(pageFlipSound);
         }
+        else
+        {
+            Debug.Log("At last page, cannot advance");
+        }
     }
+
     public void flipPrev()
     {
+        Debug.Log($"FlipPrev called — currentPage BEFORE decrement: {currentPage}");
         if (currentPage > 0)
         {
             currentPage--;
             UpdatePage();
             audioSource.PlayOneShot(pageFlipSound);
+        }
+        else
+        {
+            Debug.Log("At first page, cannot advance");
         }
     }
     private void UpdatePage()
@@ -67,9 +88,46 @@ public class PotionDexUI : MonoBehaviour
 
     public void RefreshBook()
     {
-        Debug.Log("Refreshing Potion Dex");
         discoveredPotions = new List<PotionRecipes>(PotionDex.Instance.GetDiscoveredPotions());
-        currentPage = Mathf.Clamp(currentPage, 0, discoveredPotions.Count - 1);
+        currentPage = 0;
+        Debug.Log("[RefreshBook] Reloaded potion list:");
+        for (int i = 0; i < discoveredPotions.Count; i++)
+        {
+            Debug.Log($" - [{i}] {discoveredPotions[i].potionName}");
+        }
         UpdatePage();
     }
+
+    public void ForceRefresh()
+    {
+        Debug.Log("[PotionDexUI] FORCE REFRESH CALLED");
+        currentPage = 0;
+        RefreshBook();
+    }
+    public void TogglePanel()
+    {
+        if (wholeBookPanel != null)
+        {
+            bool isActive = wholeBookPanel.activeSelf;
+            wholeBookPanel.SetActive(!isActive);
+            Debug.Log($"TogglePanel called, panel active? {!isActive}");
+        }
+        else
+        {
+            Debug.LogWarning("TogglePanel called but wholeBookPanel is null!");
+        }
+    }
 }
+
+    // private void OnEnable()
+    // {
+    //     Debug.Log("PotionDexUI OnEnable");
+    //     if (PotionDex.Instance == null)
+    //     {
+    //         Debug.LogWarning("PotionDex.Instance is null - skipping update");
+    //         return;
+    //     }
+    //     discoveredPotions = new List<PotionRecipes>(PotionDex.Instance.GetDiscoveredPotions());
+    //     currentPage = 0;
+    //     UpdatePage();
+    // }

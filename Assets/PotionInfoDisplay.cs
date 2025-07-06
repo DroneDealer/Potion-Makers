@@ -5,7 +5,6 @@ public class PotionInfoDisplay : MonoBehaviour
 {
     public GameObject potionBookPanel;
 
-    public GameObject wholeBookPanel;
     public TextMeshProUGUI potionNameText;
     public TextMeshProUGUI potionDescriptionText;
     public Image potionIconImage;
@@ -19,15 +18,26 @@ public class PotionInfoDisplay : MonoBehaviour
     }
     public void ShowInfo(PotionRecipes potion, int index)
     {
+        if (potion == null)
+        {
+            Debug.LogWarning("[ShowInfo] Received null potion.");
+            return;
+        }
+
         currentPotion = potion;
-        potionNameText.text = $"#{index + 1}: " + potion.potionName;
+        potionNameText.text = $"#{index + 1}: {potion.potionName}";
         potionDescriptionText.text = potion.potionDescription;
         potionIconImage.sprite = potion.potionIcon;
-        if (potionBookPanel != null)
+
+        if (potionBookPanel != null && !potionBookPanel.activeSelf)
         {
             potionBookPanel.SetActive(true);
         }
+
+        LayoutRebuilder.ForceRebuildLayoutImmediate(potionNameText.rectTransform);
+        LayoutRebuilder.ForceRebuildLayoutImmediate(potionDescriptionText.rectTransform);
     }
+
 
     public void hideInfo()
     {
@@ -36,11 +46,6 @@ public class PotionInfoDisplay : MonoBehaviour
             potionBookPanel.SetActive(false);
             currentPotion = null;
         }
-    }
-
-    public void ToggleInfo()
-    {
-        wholeBookPanel.SetActive(!wholeBookPanel.activeSelf);
     }
 
     public bool IsVisible()

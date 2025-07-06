@@ -57,7 +57,7 @@ public class CauldronManager : MonoBehaviour
             return false;
         }
 
-        Debug.Log($"Comparing: {currentIngredients[0].IngredientName} + {currentIngredients[1].IngredientName}  with  {a.IngredientName} + {b.IngredientName}");
+        //Debug.Log($"Comparing: {currentIngredients[0].IngredientName} + {currentIngredients[1].IngredientName}  with  {a.IngredientName} + {b.IngredientName}");
         return (currentIngredients[0] == a && currentIngredients[1] == b) || (currentIngredients[0] == b && currentIngredients[1] == a);
     }
     void ShowResult(PotionRecipes recipe)
@@ -74,10 +74,13 @@ public class CauldronManager : MonoBehaviour
         {
             infoDisplay.hideInfo();
         }
-        StartCoroutine(DelayedRefresh());
+        if (potionDexUI != null)
+        {
+            Debug.Log("[ShowResult] Forcing PotionDexUI refresh...");
+            potionDexUI.ForceRefresh();
+        }
     }
-    
-    //Supposed to run after RegisterPotion()
+
     private IEnumerator DelayedRefresh()
     {
         yield return null;
