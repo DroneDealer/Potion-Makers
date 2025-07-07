@@ -18,9 +18,10 @@ MonoBehaviour:
     ingredientB: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     potionName: Flameheart Elixir
     potionIcon: {fileID: 0}
-    potionDescription: "Born from the union of humanity\u2019s invention and nature\u2019s
-      vitality, this potion fortifies the body against all manner of impurities\u2014resisting
-      poisons, paralysis, and even flame itself. "
+    potionDescription: "This potion is born from the union of humanity\u2019s invention
+      and nature\u2019s vitality. The mildly radioactive Blightcap mushroom temporarily
+      manipulates DNA to protect the body against all manner of impurities \u2014
+      enabling the drinker to resist poisons, paralysis, and even flame itself. "
   - potionNumber: 2
     ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     ingredientB: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}

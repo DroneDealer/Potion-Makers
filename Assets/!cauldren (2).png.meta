@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: 62d065129486efe4095e2a09fb830a9d
+guid: b634ee0070a3ec946a3225b38d85c8d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4093620233156422854
-    second: Layer 1_0
+      213: -4235756535699380250
+    second: '!cauldren (2)_0'
   - first:
-      213: -6277505315535343925
-    second: Layer 1_1
+      213: -8110958773340348472
+    second: '!cauldren (2)_1'
   - first:
-      213: -1158011469451914779
-    second: Layer 1_2
+      213: 2257365129207554515
+    second: '!cauldren (2)_2'
   - first:
-      213: -1499862064577713983
-    second: Layer 1_3
-  - first:
-      213: -4079677027313287043
-    second: Layer 1_4
-  - first:
-      213: -5706764692755750699
-    second: Layer 1_5
-  - first:
-      213: -2791054232406564515
-    second: Layer 1_6
+      213: -6809720862268208434
+    second: '!cauldren (2)_3'
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,155 +109,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Layer 1_0
+      name: '!cauldren (2)_0'
       rect:
         serializedVersion: 2
-        x: 0
-        y: 46
-        width: 40
-        height: 139
+        x: 2
+        y: 49
+        width: 36
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a331c5d361a8037c0800000000000000
-      internalID: -4093620233156422854
+      spriteID: 6e7699e6fd19735c0800000000000000
+      internalID: -4235756535699380250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Layer 1_1
+      name: '!cauldren (2)_1'
       rect:
         serializedVersion: 2
-        x: 47
-        y: 46
-        width: 40
-        height: 139
+        x: 50
+        y: 49
+        width: 36
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bcea3e7dc22d1e8a0800000000000000
-      internalID: -6277505315535343925
+      spriteID: 8cfd53728f5107f80800000000000000
+      internalID: -8110958773340348472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Layer 1_2
+      name: '!cauldren (2)_2'
       rect:
         serializedVersion: 2
-        x: 96
-        y: 46
-        width: 39
-        height: 49
+        x: 98
+        y: 1
+        width: 36
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e19d7534baedefe0800000000000000
-      internalID: -1158011469451914779
+      spriteID: 3d125ceff95c35f10800000000000000
+      internalID: 2257365129207554515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Layer 1_3
+      name: '!cauldren (2)_3'
       rect:
         serializedVersion: 2
-        x: 97
-        y: 94
-        width: 38
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c8e2cc166b6f2be0800000000000000
-      internalID: -1499862064577713983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Layer 1_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 41
+        x: 98
+        y: 50
+        width: 36
         height: 46
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d708ba4db531267c0800000000000000
-      internalID: -4079677027313287043
+      spriteID: ecacfe884f20f71a0800000000000000
+      internalID: -6809720862268208434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Layer 1_5
+      name: '!cauldren (2)_4'
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 39
-        height: 46
+        x: 50
+        y: 1
+        width: 36
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5d06d876fbf7dc0b0800000000000000
-      internalID: -5706764692755750699
+      spriteID: eaa44b5b3a83d5f4ba0e33af09dbc0f7
+      internalID: -445624446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Layer 1_6
+      name: '!cauldren (2)_5'
       rect:
         serializedVersion: 2
-        x: 95
-        y: 0
-        width: 40
-        height: 46
+        x: 2
+        y: 1
+        width: 36
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d516e8896fe2449d0800000000000000
-      internalID: -2791054232406564515
+      spriteID: 2360e41a47f7f5d48ab19d8a6918bb16
+      internalID: -2128591008
       vertices: []
       indices: 
       edges: []
@@ -275,7 +244,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f2d6e8363bfec6247a14f6aa9716feb1
     internalID: 0
     vertices: []
     indices: 
@@ -285,13 +254,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Layer 1_0: -4093620233156422854
-      Layer 1_1: -6277505315535343925
-      Layer 1_2: -1158011469451914779
-      Layer 1_3: -1499862064577713983
-      Layer 1_4: -4079677027313287043
-      Layer 1_5: -5706764692755750699
-      Layer 1_6: -2791054232406564515
+      '!cauldren (2)_0': -4235756535699380250
+      '!cauldren (2)_1': -8110958773340348472
+      '!cauldren (2)_2': 2257365129207554515
+      '!cauldren (2)_3': -6809720862268208434
+      '!cauldren (2)_4': -445624446
+      '!cauldren (2)_5': -2128591008
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

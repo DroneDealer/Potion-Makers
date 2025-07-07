@@ -38,7 +38,7 @@ public class PotionDexUI : MonoBehaviour
                 discoveredPotions.Clear();
                 return;
             }
-            discoveredPotions = new List<PotionRecipes>(PotionDex.Instance.GetDiscoveredPotions());
+            discoveredPotions = new List<PotionRecipes>(PotionDex.Instance.potionDatabase.recipes);
             currentPage = 0;
             Debug.Log($"[PotionDexUI] Loaded {discoveredPotions.Count} potions");
             for (int i = 0; i < discoveredPotions.Count; i++)
@@ -49,7 +49,7 @@ public class PotionDexUI : MonoBehaviour
     public void flipNext()
     {
         Debug.Log($"FlipNext called — currentPage BEFORE decrement: {currentPage}");
-        if (currentPage > 0)
+        if (currentPage < discoveredPotions.Count - 1)
         {
             currentPage++;
             UpdatePage();
@@ -83,12 +83,14 @@ public class PotionDexUI : MonoBehaviour
             return;
         }
         PotionRecipes currentPotion = discoveredPotions[currentPage];
-        potionInfoDisplay.ShowInfo(currentPotion, currentPage);
+        bool isDiscovered = PotionDex.Instance.IsPotionDiscovered(currentPotion);
+
+        potionInfoDisplay.ShowInfo(currentPotion, currentPage, isDiscovered);
     }
 
     public void RefreshBook()
     {
-        discoveredPotions = new List<PotionRecipes>(PotionDex.Instance.GetDiscoveredPotions());
+        discoveredPotions = new List<PotionRecipes>(PotionDex.Instance.potionDatabase.recipes);
         currentPage = 0;
         Debug.Log("[RefreshBook] Reloaded potion list:");
         for (int i = 0; i < discoveredPotions.Count; i++)
