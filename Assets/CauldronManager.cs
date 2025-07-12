@@ -16,6 +16,16 @@ public class CauldronManager : MonoBehaviour
     public IngredientInfoDisplay infoDisplay;
     public PotionDexUI potionDexUI;
 
+    private void Update()
+    {
+        if (resultScreen != null && resultScreen.resultPanel != null)
+        {
+            if (!resultScreen.resultPanel.activeSelf && Time.timeSinceLevelLoad < 5f)
+            {
+                Debug.LogWarning("{LIVE WATCH} resultPanel is OFF during first 5 seconds");
+            }
+        }
+    }
     public void AddIngredient(IngredientInfo ingredient)
     {
         Debug.Log("Trying to add ingredient");
@@ -62,14 +72,15 @@ public class CauldronManager : MonoBehaviour
     }
     void ShowResult(PotionRecipes recipe)
     {
-        resultScreen.ShowPotionResult(recipe.potionName, recipe.potionDescription, recipe.potionIcon);
-        restartButton.SetActive(true);
-        Debug.Log("Brewed: " + recipe.potionName);
         // Register to the PotionDex
         if (PotionDex.Instance != null)
         {
             PotionDex.Instance.RegisterPotion(recipe);
         }
+        //resultScreen.ShowPotionResult(recipe.potionName, recipe.potionDescription, recipe.potionIcon);
+        StartCoroutine(DelayedResult(recipe));
+        restartButton.SetActive(true);
+        Debug.Log("Brewed: " + recipe.potionName);
         if (infoDisplay != null && infoDisplay.IsVisible())
         {
             infoDisplay.hideInfo();
@@ -80,7 +91,12 @@ public class CauldronManager : MonoBehaviour
             potionDexUI.ForceRefresh();
         }
     }
-
+    private IEnumerator DelayedResult(PotionRecipes recipe)
+    {
+        yield return null;
+        Debug.Log("[CauldronManager] Showing result panel now");
+        resultScreen.ShowPotionResult(recipe.potionName, recipe.potionDescription, recipe.potionIcon);
+    }
     private IEnumerator DelayedRefresh()
     {
         yield return null;

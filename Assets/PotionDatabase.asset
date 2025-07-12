@@ -17,7 +17,7 @@ MonoBehaviour:
     ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     ingredientB: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     potionName: Flameheart Elixir
-    potionIcon: {fileID: 0}
+    potionIcon: {fileID: -3750773815677841968, guid: 5eee0ae2fadc9034e962450bfce1367e, type: 3}
     potionDescription: "This potion is born from the union of humanity\u2019s invention
       and nature\u2019s vitality. The mildly radioactive Blightcap mushroom temporarily
       manipulates DNA to protect the body against all manner of impurities \u2014
@@ -26,15 +26,15 @@ MonoBehaviour:
     ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     ingredientB: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     potionName: Ashling's Kiss
-    potionIcon: {fileID: 0}
+    potionIcon: {fileID: 4967726628087834456, guid: 5bd001b14fa232f4ca66d00f4944092e, type: 3}
     potionDescription: "Born from the life-giving Angel\u2019s Tear and the otherworldly
       warmth of the Nether Sapling, this unique potion soothes frostbite and eases
-      the passage of both the dying and the restless undead."
+      the passage of the dying and the restless undead."
   - potionNumber: 3
     ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     ingredientB: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     potionName: Bottled Starlight
-    potionIcon: {fileID: 0}
+    potionIcon: {fileID: 4991566288259375989, guid: 76464505d2e91e04fae3e79a140d8a92, type: 3}
     potionDescription: The combination of the steady warmth of the Nether Rose and
       the astrally aligned Metamorphite results in a fascinating cloaking potion
       that allows the drinker to manipulate light. They can render themselves invisible
@@ -43,26 +43,29 @@ MonoBehaviour:
     ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     ingredientB: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     potionName: Emberluck Draught
-    potionIcon: {fileID: 0}
+    potionIcon: {fileID: 8191540739243909039, guid: 77dea4f80dcc1db4399e80aebe7aa95a, type: 3}
     potionDescription: "Infused with the Nether rose\u2019s stubborn warmth and the
       clover\u2019s luck, this draught grants a quiet but persistent good fortune\u2014like
-      a small refuge of hope in the worst storms."
+      a small refuge of hope in the worst storms. Debates on the true nature of luck
+      have ensued for generations - indeed, this particular potion seems to have
+      no luck - manipulating properties. Instead, it manipuates the psyche, making
+      the drinker hope for the best and disguising it as feeling lucky."
   - potionNumber: 5
     ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     ingredientB: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
     potionName: False Awakening
-    potionIcon: {fileID: 0}
+    potionIcon: {fileID: -4482681835228205806, guid: 28012924d4db7ee4cb55138a08073a3e, type: 3}
     potionDescription: "The hope embodied by the Nether Flame melds with the Crimson
       Vein Flower\u2019s dream-warping visions to create illusions so vivid, the
-      victim truly believes they can grasp their most impossible dreams. These visions
+      drinker truly believes they can grasp their most impossible dreams. These visions
       are not mere lies but reflections of the best possible version of themselves\u2014though
-      in truth, few desperate enough to summon such hope ever fully realize that
+      in truth, few desperate enough to drink the potion ever fully realize that
       ideal."
   - potionNumber: 6
     ingredientA: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     ingredientB: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     potionName: Bane of Luck
-    potionIcon: {fileID: 0}
+    potionIcon: {fileID: 7716989029583481714, guid: 79c0899043830ee48a4b5196afe02b78, type: 3}
     potionDescription: Due to the weak radioactive emissions from the Blightcap muhsroom,
       the magical properties of the clover have been altered and reversed - instead
       of bringing luck and joy, the potion tips the scales away from your favor.
@@ -72,7 +75,7 @@ MonoBehaviour:
     ingredientA: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     ingredientB: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     potionName: Memory Fog
-    potionIcon: {fileID: 0}
+    potionIcon: {fileID: -6835214464314942422, guid: 1ed619008dbb5574287943a8d6702e8a, type: 3}
     potionDescription: "A bittersweet blend of Angel\u2019s Tears and the corrupting
       touch of the Blightcap Mushroom, this potion clouds the mind in a gentle haze.
       It dulls painful memories and numbs grief, offering relief from trauma\u2014but
@@ -82,67 +85,74 @@ MonoBehaviour:
     ingredientA: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     ingredientB: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     potionName: Riftshocker
-    potionIcon: {fileID: 0}
-    potionDescription: ' The unsavory combination of two incredibly unstable ingredients
-      of unnatural origin inevitably causes a hole to rip in the space - time continuum.
-      Be warned: the drinker may be transported to another dimension, be thrown backwards
-      in time, be caught in a space - time loop, or may simply explode due to an
-      imbalance in cosmic forces. NEVER CREATE INTENTIONALLY WITHOUT A SENIOR SPACETIME
-      TRAVELLER PRESENT AND PREPARED.'
+    potionIcon: {fileID: 352424533251636696, guid: 7fdc84c5e213f8045a51db1f1967b816, type: 3}
+    potionDescription: ' The unsavory combination of Metamorphite and the Blightcap
+      mushroom, two incredibly unstable ingredients of unnatural origin, inevitably
+      causes a hole to rip in the space - time continuum. Be warned: the drinker
+      may be transported to another dimension, be thrown backwards in time, be caught
+      in a space - time loop, or may simply explode due to an imbalance in cosmic
+      forces. NEVER CREATE INTENTIONALLY WITHOUT A SENIOR SPACETIME TRAVELLER PRESENT
+      AND PREPARED.'
   - potionNumber: 9
     ingredientA: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     ingredientB: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     potionName: Hollowed Charm
-    potionIcon: {fileID: 0}
-    potionDescription: "Quite unexpected for two remarkably helpful ingredients,
-      this potion produces an aura of trust that deceives rather than heals. Often
-      used by politicians and silver-tongued opportunists, it draws people in\u2014regardless
-      of whether that trust is deserved."
+    potionIcon: {fileID: 8177464837607482511, guid: 4667356fabad4fe409717e7b5f7549f8, type: 3}
+    potionDescription: "Quite unexpected of the combination of Angel's Tears and
+      the 3 Leaf Clover, two remarkably helpful ingredients, this potion produces
+      an aura of trust that deceives rather than heals. Often used by politicians
+      and silver-tongued opportunists, it draws people in\u2014regardless of whether
+      that trust is deserved."
   - potionNumber: 10
     ingredientA: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     ingredientB: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
     potionName: Toxic Bloom
-    potionIcon: {fileID: 0}
-    potionDescription: "Emits poisonous, hallucination-inducing spores when uncapped
+    potionIcon: {fileID: -6079950499172098170, guid: 9bc01fbd89e8b3145ab52b59a6c41319, type: 3}
+    potionDescription: "Born form the combination of the Blightcap mushroom and the
+      Crimson Vein flower. Emits poisonous, hallucination-inducing spores when uncapped
       and spread. The nature of these hallucinations appears to be shaped by the
       victim\u2019s inner conflicts as well as glimpses of their future \u2014 quite
-      a fascinating property. Useful for defense and weakening foes."
+      a fascinating property."
   - potionNumber: 11
     ingredientA: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     ingredientB: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     potionName: Fickle Fortuna
-    potionIcon: {fileID: 0}
-    potionDescription: "An unstable fusion of subtle luck and living transformation
-      magic. This potion attempts to mold the drinker into their \u201Cluckiest form\u201D...
-      but luck is fickle. Results vary wildly, from temporary wings to jelly legs,
-      extra knees, or the occasional third elbow. The form is rarely useful. Sometimes
-      edible.\nIt has earned the unofficial nickname Crumblebrew, after the first
-      known test subject\u2019s bones destabilized and their head was replaced with
-      what witnesses insist was a giant cracker. It is still debated to this day
-      whether or not the cracker was rye- or water- based."
+    potionIcon: {fileID: 5106233009337008746, guid: c78a79d8a8678424ab62dbeaaa491bc1, type: 3}
+    potionDescription: "An unstable fusion of the 3 leaf clover's subtle luck and
+      the living transformation magic embodied by Metamorphite. This potion attempts
+      to mold the drinker into their \u201Cluckiest form\u201D... but luck is fickle.
+      Results vary wildly, from temporary wings to jelly legs, extra knees, or the
+      occasional third elbow. The form is rarely useful. Sometimes edible.\nIt has
+      earned the unofficial nickname Crumblebrew, after the first known test subject\u2019s
+      bones destabilized and their head was replaced with what witnesses insist was
+      a giant cracker. It is still debated to this day whether or not the cracker
+      was rye- or water- based."
   - potionNumber: 12
     ingredientA: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     ingredientB: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
     potionName: Seed of Truth
-    potionIcon: {fileID: 0}
-    potionDescription: "A quiet but jarring potion brewed from overlooked potential
-      and unblinking self-perception. Upon drinking, you see the truth of who you
-      are\u2014not in dreams, but in total clarity. Strengths you ignored. Flaws
-      you excused. Some are inspired. Others run. The potion never lies\u2026 but
-      it never softens, either."
+    potionIcon: {fileID: -3313696215841133787, guid: 71d076875b164524db89480c14fa8941, type: 3}
+    potionDescription: "Don't be fooled by its inviting appearnace - this potion
+      has corrupted the spirits of countless humans. Born from the combination of
+      the 3 leaf clover and the Crimson Vein flower. A quiet but jarring potion brewed
+      from overlooked potential and unblinking self-perception. Upon drinking, you
+      see the truth of who you are\u2014not in dreams, but in total clarity. Strengths
+      you ignored. Flaws you excused. Some are inspired. Others run. The potion never
+      lies\u2026 but it never softens, either."
   - potionNumber: 13
     ingredientA: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     ingredientB: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     potionName: Angel's Star
-    potionIcon: {fileID: 0}
-    potionDescription: "Forged from healing sacrifice and celestial change, this
-      potion grants the power to transfigure into another form\u2014held flawlessly
-      for one day and one night, then undone as if it were never real."
+    potionIcon: {fileID: -8621520437096351795, guid: 5bb6e338fc5fc6f4788e80b42a6dd998, type: 3}
+    potionDescription: "Forged from the healing sacrifice of the Angel's Tear and
+      the celestial change embodied in Metamorphite, this potion grants the power
+      to transfigure into another form\u2014held flawlessly for one day and one night,
+      then undone as if it were never real."
   - potionNumber: 14
     ingredientA: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     ingredientB: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
     potionName: Vigil's Mercy
-    potionIcon: {fileID: 0}
+    potionIcon: {fileID: -7158263101851002469, guid: 6f9ece84cd69bea4db0a87eb566c4bcb, type: 3}
     potionDescription: "When the healing power of Angel\u2019s Tears meets the unblinking
       sentience of the Crimson Vein, the result is a potion that senses harm before
       it strikes. The drinker gains a moment of divine foresight\u2014enough to dodge
@@ -152,7 +162,7 @@ MonoBehaviour:
     ingredientA: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     ingredientB: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
     potionName: Veilrend Elixir
-    potionIcon: {fileID: 0}
+    potionIcon: {fileID: 5096614791206541880, guid: 7ffdb366b39b7774784648e937c40aae, type: 3}
     potionDescription: "A volatile blend that warps the fabric of magic itself. Upon
       drinking, the user\u2019s sight fractures\u2014enchantments ripple and shatter
       before their eyes. For a brief time, the drinker can unravel magical effects
@@ -165,17 +175,17 @@ MonoBehaviour:
   - potionNumber: 16
     ingredientA: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
     ingredientB: {fileID: 11400000, guid: f2a81f8e2a884454f8fb522cf6d3b237, type: 2}
-    potionName: Hel''s Respite
-    potionIcon: {fileID: 0}
+    potionName: Hell's Respite
+    potionIcon: {fileID: 4648324733464916961, guid: 13f8b36f6f4fa0b459c8c93ae64ac479, type: 3}
     potionDescription: "Plucked from the flame-kissed thorns of the nether wilds,
       two blooms entwine to brew a balm for the battleworn. This potion carries the
       paradox of its origin \u2014 a moment of peace born from a world of fire. When
-      all hope burns away, it grants a breath of calm, a sanctuary in a bottle.\n\n"
+      all hope burns away, it grants a breath of calm, a sanctuary in a bottle."
   - potionNumber: 17
     ingredientA: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     ingredientB: {fileID: 11400000, guid: fab8b4e77a9f17c428f6c610d9cff75d, type: 2}
     potionName: Angel's Blessings
-    potionIcon: {fileID: 0}
+    potionIcon: {fileID: -7974375077307904061, guid: 69ccf377fa93745428d7aff66e6bb845, type: 3}
     potionDescription: "Forged from twin tears of the protectors of all, the Angel\u2019s
       Blessing binds the drinker to a solemn vow: to mend broken bodies with threads
       of their own being. Every touch heals, yet every cure comes at a painful cost
@@ -184,7 +194,7 @@ MonoBehaviour:
     ingredientA: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     ingredientB: {fileID: 11400000, guid: b2c99ba5e20ac2e4f90bd0a1039588f8, type: 2}
     potionName: Rotborne Elixir
-    potionIcon: {fileID: 0}
+    potionIcon: {fileID: 738499673904396008, guid: e4184ad5cfae3724bb293ec9bfbc9a1c, type: 3}
     potionDescription: "Brewed from two Blightcap mushrooms steeped in radioactive
       decay, this potion thrums with unnatural energy. It does not mend \u2014 it
       mutates. Those who drink it feel strength bloom from sickness, vigor from rot.
@@ -195,7 +205,7 @@ MonoBehaviour:
     ingredientA: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     ingredientB: {fileID: 11400000, guid: af41aabd448a40e49b9c5e2644e630ea, type: 2}
     potionName: Essence of Luck
-    potionIcon: {fileID: 0}
+    potionIcon: {fileID: 3962816374274329001, guid: c40e8cf7b8deda644ad741b3814dec4b, type: 3}
     potionDescription: "Brewed from a pair of perfectly average three-leaf clovers,
       this potion is nature\u2019s little prank \u2014 for all the commonness of
       its ingredients, it\u2019s filled to the brim with luck. The universe looks
@@ -207,7 +217,7 @@ MonoBehaviour:
     ingredientA: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     ingredientB: {fileID: 11400000, guid: 3b9c7e163aa8d2644a1e7da4fb21a256, type: 2}
     potionName: Stellar Flux Elixir
-    potionIcon: {fileID: 0}
+    potionIcon: {fileID: 6180334524495757686, guid: db250f3f2a4fc3d41b809ad2b262c7e8, type: 3}
     potionDescription: "Born from twin shards of cosmic stone, the Metamorphite potion
       pulses with a quiet life of its own. Forged from rocks that fell from wandering
       skies, it carries the ancient power to shift and reshape, echoing the restless
@@ -219,8 +229,8 @@ MonoBehaviour:
   - potionNumber: 21
     ingredientA: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
     ingredientB: {fileID: 11400000, guid: 3c04ab6ca6210db4a87212dd329609ef, type: 2}
-    potionName: Psychis's Prison
-    potionIcon: {fileID: 0}
+    potionName: Psychic's Prison
+    potionIcon: {fileID: 4829312983447529251, guid: 014f581c428d5044a8b33b710c063fe5, type: 3}
     potionDescription: "Brewed from a pair of Crimson Vein Flowers, this potent elixir
       opens the drinker\u2019s mind to glimpses beyond the veil\u2014visions of futures
       seen and unseen, truths both dazzling and disturbing. But such power demands
