@@ -16,7 +16,7 @@ public class PotionDexUI : MonoBehaviour
 
     [Header("Audio")]
     public AudioClip pageFlipSound;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
 
     private List<PotionRecipes> discoveredPotions = new List<PotionRecipes>();
@@ -28,17 +28,17 @@ public class PotionDexUI : MonoBehaviour
         prevButton.onClick.RemoveAllListeners();
         nextButton.onClick.AddListener(flipNext);
         prevButton.onClick.AddListener(flipPrev);
-        audioSource = GetComponent<AudioSource>();
+        //audioSource = GetComponent<AudioSource>();
     }
         public void LoadPotions()
         {
-            if (PotionDex.Instance == null)
+            if (PotionDex.existence == null)
             {
                 Debug.LogWarning("[PotionDexUI] PotionDex.Instance is null!");
                 discoveredPotions.Clear();
                 return;
             }
-            discoveredPotions = new List<PotionRecipes>(PotionDex.Instance.potionDatabase.recipes);
+            discoveredPotions = new List<PotionRecipes>(PotionDex.existence.potionDatabase.recipes);
             currentPage = 0;
             Debug.Log($"[PotionDexUI] Loaded {discoveredPotions.Count} potions");
             for (int i = 0; i < discoveredPotions.Count; i++)
@@ -53,7 +53,14 @@ public class PotionDexUI : MonoBehaviour
         {
             currentPage++;
             UpdatePage();
-            audioSource.PlayOneShot(pageFlipSound);
+            if (audioSource != null && pageFlipSound != null)
+            {
+                audioSource.PlayOneShot(pageFlipSound);
+            }
+            else
+            {
+                Debug.LogWarning("Either your Audio Source or your sound effect are not assigned in the inspector!");
+            }
         }
         else
         {
@@ -68,7 +75,14 @@ public class PotionDexUI : MonoBehaviour
         {
             currentPage--;
             UpdatePage();
-            audioSource.PlayOneShot(pageFlipSound);
+            if (audioSource != null && pageFlipSound != null)
+            {
+                audioSource.PlayOneShot(pageFlipSound);
+            }
+            else
+            {
+                Debug.LogWarning("Either your Audio Source or your sound effect are not assigned in the inspector!");
+            }
         }
         else
         {
@@ -83,14 +97,14 @@ public class PotionDexUI : MonoBehaviour
             return;
         }
         PotionRecipes currentPotion = discoveredPotions[currentPage];
-        bool isDiscovered = PotionDex.Instance.IsPotionDiscovered(currentPotion);
+        bool isDiscovered = PotionDex.existence.IsPotionDiscovered(currentPotion);
 
         potionInfoDisplay.ShowInfo(currentPotion, currentPage, isDiscovered);
     }
 
     public void RefreshBook()
     {
-        discoveredPotions = new List<PotionRecipes>(PotionDex.Instance.potionDatabase.recipes);
+        discoveredPotions = new List<PotionRecipes>(PotionDex.existence.potionDatabase.recipes);
         currentPage = 0;
         Debug.Log("[RefreshBook] Reloaded potion list:");
         for (int i = 0; i < discoveredPotions.Count; i++)
@@ -108,6 +122,10 @@ public class PotionDexUI : MonoBehaviour
     }
     public void TogglePanel()
     {
+        if (audioSource != null && pageFlipSound != null)
+        {
+            audioSource.PlayOneShot(pageFlipSound);
+        }
         if (wholeBookPanel != null)
         {
             bool isActive = wholeBookPanel.activeSelf;

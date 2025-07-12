@@ -73,9 +73,9 @@ public class CauldronManager : MonoBehaviour
     void ShowResult(PotionRecipes recipe)
     {
         // Register to the PotionDex
-        if (PotionDex.Instance != null)
+        if (PotionDex.existence != null)
         {
-            PotionDex.Instance.RegisterPotion(recipe);
+            PotionDex.existence.RegisterPotion(recipe);
         }
         //resultScreen.ShowPotionResult(recipe.potionName, recipe.potionDescription, recipe.potionIcon);
         StartCoroutine(DelayedResult(recipe));

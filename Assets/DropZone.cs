@@ -1,8 +1,11 @@
+using System.Data;
 using UnityEngine;
 using UnityEngine.EventSystems;
 public class DropZone : MonoBehaviour, IDropHandler
 {
     public CauldronManager cauldronManager;
+    public AudioSource auidoSOurce;
+    public AudioClip bubbling;
     public void OnDrop(PointerEventData eventData)
     {
         GameObject droppedItem = eventData.pointerDrag;
@@ -18,6 +21,10 @@ public class DropZone : MonoBehaviour, IDropHandler
                 Debug.Log("Adding ingredient: " + carrier.ingredient.IngredientName);
                 cauldronManager.AddIngredient(carrier.ingredient);
             }
+            if (auidoSOurce != null && bubbling != null)
+            {
+                auidoSOurce.PlayOneShot(bubbling);
+                }
             else
             {
                 Debug.LogWarning("Dropped item doesn't have a valid IngredientCarrier or ingredient is missing!");

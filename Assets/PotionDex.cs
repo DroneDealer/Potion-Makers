@@ -3,16 +3,16 @@ using UnityEngine;
 
 public class PotionDex : MonoBehaviour
 {
-    public static PotionDex Instance;
+    public static PotionDex existence;
     public PotionDatabase potionDatabase;
     private List<PotionRecipes> discoveredPotions = new List<PotionRecipes>();
     private void Awake()
     {
         Debug.Log("Potion Awake called!");
         DontDestroyOnLoad(gameObject);
-        if (Instance == null)
+        if (existence == null)
         {
-            Instance = this;
+            existence = this;
         }
         else
         {
