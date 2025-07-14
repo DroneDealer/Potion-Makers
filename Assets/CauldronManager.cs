@@ -16,6 +16,11 @@ public class CauldronManager : MonoBehaviour
     public IngredientInfoDisplay infoDisplay;
     public PotionDexUI potionDexUI;
 
+    private void Start()
+    {
+        potionDexUI.ForceRefresh();
+    }
+    // Fir future reference, add null checks to code - will save me a lot of trouble
     private void Update()
     {
         if (resultScreen != null && resultScreen.resultPanel != null)
