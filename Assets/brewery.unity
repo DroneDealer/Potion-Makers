@@ -4724,7 +4724,6 @@ GameObject:
   - component: {fileID: 1815729567}
   - component: {fileID: 1815729566}
   - component: {fileID: 1815729564}
-  - component: {fileID: 1815729568}
   m_Layer: 5
   m_Name: IngredientInfoPanel
   m_TagString: Untagged
@@ -4808,18 +4807,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815729562}
   m_CullTransparentMesh: 1
---- !u!225 &1815729568
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815729562}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &1930826858
 GameObject:
   m_ObjectHideFlags: 0
