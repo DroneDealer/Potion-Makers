@@ -29,9 +29,9 @@ A game in which you brew potions, choosing from several otherworldly different i
 - Ingredients by [shiax](https://shiaxs.itch.io/mystical-plants-pixel?download) on itch.io and [Darina Grant](https://darinagrant.itch.io/free-pixel-art-alchemy-icon-pack) on itch.io
 - Potion ingredient panel by [denizen-games](https://denizen-games.itch.io/parchment-2d-vector-based-ui-for-fantasy-games?utm_source=chatgpt.com) on itch.io
 **Music and Sound Effects**
-  - 魔女 witch by [nojisuma](https://pixabay.com/music/video-games-%E9%AD%94%E5%A5%B3-witch-144292/) on Pixabay
-  - Page flip by [j1987](https://freesound.org/people/j1987/sounds/573067/) on freesound.org
-  - Potion bubbling by [freesound_community](https://pixabay.com/sound-effects/085594-potion-35983/) on Pixabay
+- 魔女 witch by [nojisuma](https://pixabay.com/music/video-games-%E9%AD%94%E5%A5%B3-witch-144292/) on Pixabay
+- Page flip by [j1987](https://freesound.org/people/j1987/sounds/573067/) on freesound.org
+- Potion bubbling by [freesound_community](https://pixabay.com/sound-effects/085594-potion-35983/) on Pixabay
  
   ## Built With
   - Unity 6.0.1.11
