@@ -1,12 +1,12 @@
 # Potion Makers
 A game in which you brew potions, choosing from several otherworldly different ingredients and having the ability to brew 21 unique potions!
 
-## Gameplay
-- By clicking on an ingredient, you can see its properties
+## Controls
+- By **clicking on an ingredient**, you can see its properties
 	- To close the ingredient property popup, you can click the ingredient again or just brew a potion!
- - **To brew a potion**, drag your two choice ingredients to the cauldron and a results screen will pop up, showing the properties of the potion you brewed!
+ - To **brew a potion**, drag your two choice ingredients to the cauldron and a results screen will pop up, showing the properties of the potion you brewed!
  	- To return to cooking up potions, just click the "back to the brewery" button on the results screen.
-- To see your record, click the **Potion Dex** to see all the potions you've brewed and which ones have yet to be discovered!
+- To see your record, click the **Potion Dex** to **see all the potions you've brewed** and which ones have yet to be discovered!
 	- To close the Dex, simply click the button again
  	- To flip its pages, click the arrow buttons on the screen
 
