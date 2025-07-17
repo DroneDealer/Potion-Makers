@@ -32,7 +32,7 @@ A game in which you brew potions, choosing from several otherworldly different i
 - Cauldron animation by [kaiowoka](https://kaiowoka.itch.io/cauldron-cooking-pot-on-a-fire?download) on itch.io
 - Table sprites by [Ericks Azevedo](https://ericksazevedo.itch.io/kitchen) on itch.io
 - Potion sprites by [TrulyMalicious](https://trulymalicious.itch.io/potion-set-1-free) on itch.io and [CraftPix](https://craftpix.net/freebies/free-game-icons-of-fantasy-potions-pack-1/?num=1&count=66&sq=potions&pos=11) on craftpix.net
-- Brewery background by [SeeOne](https://seeone.itch.io/haunted-library) on itch.io, modified by Anika Rastogi with permission
+- Brewery background by [SeeOne](https://seeone.itch.io/haunted-library) on itch.io, modified by DroneDealer with permission
 - Ingredients by [shiax](https://shiaxs.itch.io/mystical-plants-pixel?download) on itch.io and [Darina Grant](https://darinagrant.itch.io/free-pixel-art-alchemy-icon-pack) on itch.io
 - Potion ingredient panel by [denizen-games](https://denizen-games.itch.io/parchment-2d-vector-based-ui-for-fantasy-games?utm_source=chatgpt.com) on itch.io
 
