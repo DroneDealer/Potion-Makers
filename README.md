@@ -11,11 +11,11 @@ A game in which you brew potions, choosing from several otherworldly different i
  	- To flip its pages, click the arrow buttons on the screen
 
 ## Features
-**Mix and match potions**: Choose 2 out of 6 ingredients to discover fascinating and funny potions!
-**WebGL Compatible**: No download required!
-**Click - Based UI**
-**Animated Cauldron**
-**Amazing pixel art**
+- **Mix and match potions**: Choose 2 out of 6 ingredients to discover fascinating and funny potions!
+- **WebGL Compatible**: No download required!
+- **Click - Based UI**
+- **Animated Cauldron**
+- **Amazing pixel art**
 
 ## Gameplay Instructions
 [Click here to play Potion Makers on WebGL](https://dronedealer.github.io/Potion-Makers/)
