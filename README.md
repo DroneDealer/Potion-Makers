@@ -1,7 +1,10 @@
 # Potion Makers
 A game in which you brew potions, choosing from several otherworldly different ingredients and having the ability to brew 21 unique potions!
 
-## Controls
+## Inspiration
+I wanted to learn how to create visually engaging games, and I thought: what better way to do that than with a bit of magic? So I made a couple of magic-themed projects, including Potion Makers, to experiment with aesthetic design, funny interactions, and magic - inspired UI.
+
+## Gameplay
 - By **clicking on an ingredient**, you can see its properties
 	- To close the ingredient property popup, you can click the ingredient again or just brew a potion!
  - To **brew a potion**, drag your two choice ingredients to the cauldron and a results screen will pop up, showing the properties of the potion you brewed!
@@ -23,7 +26,7 @@ A game in which you brew potions, choosing from several otherworldly different i
 ## Gameplay Screenshots
 - [Game start](https://i.postimg.cc/3RHMMjCM/Screenshot-194.png)
 - [Ingredient info UI](https://i.postimg.cc/kGfLt0r9/Screenshot-195.png)
-- [Brew resuts UI](https://i.postimg.cc/Jn3fRyPs/Screenshot-196.png)
+- [Brew results UI](https://i.postimg.cc/Jn3fRyPs/Screenshot-196.png)
 - [Undiscovered potion](https://i.postimg.cc/Fz92z9BD/Screenshot-197.png)
 - [Discovered potion](https://i.postimg.cc/Dfg9DXSD/Screenshot-198.png)
 
@@ -47,3 +50,5 @@ A game in which you brew potions, choosing from several otherworldly different i
 ## Built With
 - Unity 6.0.1.11
 - C#
+
+## Created by Anika Rastogi for Shipwrecked Hackathon by Hackclub
