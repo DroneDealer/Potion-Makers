@@ -21,11 +21,11 @@ A game in which you brew potions, choosing from several otherworldly different i
 [Click here to play Potion Makers on WebGL](https://dronedealer.github.io/Potion-Makers/)
 
 ## Gameplay Screenshots
-[Game start](https://i.postimg.cc/3RHMMjCM/Screenshot-194.png)
-[Ingredient info UI](https://i.postimg.cc/kGfLt0r9/Screenshot-195.png)
-[Brew resuts UI](https://i.postimg.cc/Jn3fRyPs/Screenshot-196.png)
-[Undiscovered potion](https://i.postimg.cc/Fz92z9BD/Screenshot-197.png)
-[Discovered potion](https://i.postimg.cc/Dfg9DXSD/Screenshot-198.png)
+- [Game start](https://i.postimg.cc/3RHMMjCM/Screenshot-194.png)
+- [Ingredient info UI](https://i.postimg.cc/kGfLt0r9/Screenshot-195.png)
+- [Brew resuts UI](https://i.postimg.cc/Jn3fRyPs/Screenshot-196.png)
+- [Undiscovered potion](https://i.postimg.cc/Fz92z9BD/Screenshot-197.png)
+- [Discovered potion](https://i.postimg.cc/Dfg9DXSD/Screenshot-198.png)
 
 ## Credits
 **Art Assets**
