@@ -33,7 +33,7 @@ A game in which you brew potions, choosing from several otherworldly different i
 - 魔女 witch by [nojisuma](https://pixabay.com/music/video-games-%E9%AD%94%E5%A5%B3-witch-144292/) on Pixabay
 - Page flip by [j1987](https://freesound.org/people/j1987/sounds/573067/) on freesound.org
 - Potion bubbling by [freesound_community](https://pixabay.com/sound-effects/085594-potion-35983/) on Pixabay
- 
-  ## Built With
-  - Unity 6.0.1.11
-  - C#
+
+## Built With
+- Unity 6.0.1.11
+- C#
