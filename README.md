@@ -34,6 +34,9 @@ A game in which you brew potions, choosing from several otherworldly different i
 - Page flip by [j1987](https://freesound.org/people/j1987/sounds/573067/) on freesound.org
 - Potion bubbling by [freesound_community](https://pixabay.com/sound-effects/085594-potion-35983/) on Pixabay
 
+**Fonts**
+- [Cinzel by Natanael Gama](https://fonts.google.com/specimen/Cinzel)
+
 ## Built With
 - Unity 6.0.1.11
 - C#
