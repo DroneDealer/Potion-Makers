@@ -2,7 +2,9 @@
 A game in which you brew potions, choosing from several otherworldly different ingredients and having the ability to brew 21 unique potions!
 
 ## Inspiration
-I wanted to learn how to create visually engaging games, and I thought: what better way to do that than with a bit of magic? So I made a couple of magic-themed projects, including Potion Makers, to experiment with aesthetic design, funny interactions, and magic - inspired UI.
+I wanted to learn how to create visually engaging games, and I thought: what better way to do that than with a bit of magic? So I made a couple of magic-themed projects, including Potion Makers, to experiment with aesthetic design, funny interactions, and magic - inspired UI and lore.
+
+Producing this game helped me learn how to properly use WebGL formatting (which was a big struggle for all of my projects) and how to appropriately use SriptableObjects. In addition, it was a big help for learning to implement click and drag based UI that is compatible on mobile and on a computer.
 
 ## Gameplay
 - By **clicking on an ingredient**, you can see its properties
@@ -50,5 +52,15 @@ I wanted to learn how to create visually engaging games, and I thought: what bet
 ## Built With
 - Unity 6.0.1.11
 - C#
+
+## Badges
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+<div align="center">
+  <a href="https://shipwrecked.hackclub.com/?t=ghrm" target="_blank">
+    <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/739361f1d440b17fc9e2f74e49fc185d86cbec14_badge.png" 
+         alt="This project is part of Shipwrecked, the world's first hackathon on an island!" 
+         style="width: 35%;">
+  </a>
+</div>
 
 ## Created by Anika Rastogi for Shipwrecked Hackathon by Hackclub
